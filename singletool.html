@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Tool Specific</title>
+<link href="more.css" rel="stylesheet" type="text/css" />
+</head>
+	<body style="color:#FFFFFF" onload="select_All()">
+	<p>
+  <marquee behavior="alternate" direction="right" scrollamount="5">
+  <img src="project3.jpg" width="1150" height="175" alt="logo1" /><img src="project33.jpg" width="1150" height="175" alt="logo2" /><img src="project31.jpg" width="1150" height="175" alt="logo3" />
+  </marquee>
+</p>
+		<center><h1>Tool Detail</h1>
+			<form id="form2" name="form2" method="post" align="center">
+			<h1 align="center" style="color:#FFFFFF">Tool Check Details </h1>
+
+				<table width="page" align="center">
+				<tr>
+					<td><h3 align="center" style="color:#FFFFFF">Welcome User: </h3></td>
+					<td><input type="text" id="user" style="color:#FFFFFF;font-size:24px;background-color:#154734;border-color:#154734" value="" disabled/>
+					<td><input id="birth" type="hidden" readonly></td>
+				</tr>
+					<tr>
+						<td align="center">Tool Type</td>
+						<td><input id="tooltype" type="label" name="tooltype" value="Tool Type" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">Tool Name</td>
+						<td><input id="toolname" type="label" name="toolname" value="Tool Name" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">Tool Details</td>
+						<td><input id="tooldetail" type="label" name="tooldetail" value="Tool Detail" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">No of Tools</td>
+						<td><input id="count" type="label" name="count" value="Count" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">Tool Company Name</td>
+						<td><input id="company" type="label" name="company" value="Company Nmae" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">Tool Company address</td>
+						<td><input id="address" type="label" name="address" value="Company Address" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">System Requirement</td>
+						<td><input id="sysreq" type="label" name="sysreq" value="System Requirement" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">Version</td>
+						<td><input id="version" type="label" name="version" value="Version" disabled="disabled"></td>
+						</tr><tr>
+						<td align="center">GUI Image</td>
+						<td><img id="image5" src=".jpg" alt="logo5" width="500" height="500"></td></td>
+						</tr><tr>
+						<td align="center">Cost</td>
+						<td><input id="cost" type="label" name="cost" value="cost of product" disabled="disabled"></td>
+						</tr>
+						<tr>
+						<td align="center">Please enter item count to checkout / add to card</td>
+						<td><input id="itemcount" type="text" name="itemcount" /></td>
+						</tr>
+						<tr>
+						<td height="41" align="center"><input type="button" name="submit" value="Check Out!!" onClick="checkout()"/>	</td>
+						<td height="41" align="center"><input type="button" name="submit1" value="Add to Cart!!" onClick="cart()"/>	</td>
+						<td height="41" align="center"><input type="button" name="submit2" value="Show Cart!!" onClick="showcart()"/>	</td>
+					</tr>
+</table>
+</form>
+</body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+<script src="http://harvey2.cc.binghamton.edu/~pmore2/Project3/singletool.js" type="text/javascript" language="javascript"></script>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Tools</title>
+<link href="more.css" rel="stylesheet" type="text/css" />
+</head>
+
+	<body style="color:#FFFFFF" onload="select_All()">
+	<p>
+  <marquee behavior="alternate" direction="right" scrollamount="5">
+  <img src="project3.jpg" width="1150" height="175" alt="logo1" /><img src="project33.jpg" width="1150" height="175" alt="logo2" /><img src="project31.jpg" width="1150" height="175" alt="logo3" />
+  </marquee>
+</p>
+		<center><h1>Tool Entry Form</h1>
+			<form id="form2" name="form2" method="post" align="center">
+				<table width="page" align="center">
+				<tr>
+					<td><h3 align="center" style="color:#FFFFFF">Welcome User: </h3></td>
+					<td><input type="text" id="user" style="color:#FFFFFF;font-size:14px;background-color:#154734;border-color:#154734" value="" disabled/>
+				</td>
+
+					<tr>
+						<td align="center">Delete</td>
+						<td align="center">update</td>
+						<td align="center">Tool Type</td>
+						<td align="center">Tool Name</td>
+						<td align="center">Tool Details</td>
+						<td align="center">No of Tools</td>
+						<td align="center">Tool Company Name</td>
+						<td align="center">Tool Company address</td>
+						<td align="center">System Requirement</td>
+						<td align="center">Cost</td>
+						<td align="center">Version</td>
+						<td align="center">Image</td>
+					</tr>
+					<tr>
+						<td><input id=radio1 type="radio" name="del" onChange="return handleChange()"></td>
+						<td><input id=radioup1 type="radio" name="update" onChange="return handleChangeUpdate()"></td>
+						<td><input id=type1 type="text" name="type" readonly></td>
+						<td><input id=name1 type="text" name="name" readonly></td>
+						<td><input id=details1 type="text" name="details" value=""  disabled="disabled"></td>
+						<td><input id=count1 type="text" name="count" value=""  disabled="disabled"></td>
+						<td><input id=cname1 type="text" name="cname" readonly></td>
+						<td><input id=caddress1 type="text" name="caddress" value=""  disabled="disabled"></td>
+						<td><input id=sysreq1 type="text" name="sysreq" value=""  disabled="disabled"></td>
+						<td><input id=cost1 type="text" name="cost" value=""  disabled="disabled"></td>
+						<td><input id=version1 type="text" name="version" value=""  disabled="disabled"></td>
+						<td><img id="image1" src=".jpg" alt="logo1" width="42" height="42"></td>
+			    	    <td><input id=pos1 type="hidden" readonly>
+					    <input type="button" name="up2" value="Scroll Up" onclick="return scrollUp()" /></td>
+						
+					</tr>
+					<tr>
+						<td><input id=radio2 type="radio" name="del" onChange="return handleChange()"></td>
+						<td><input id=radioup2 type="radio" name="update" onChange="return handleChangeUpdate()"></td>
+						<td><input id=type2 type="text" name="type" readonly></td>
+						<td><input id=name2 type="text" name="name" readonly></td>
+						<td><input id=details2 type="text" name="details" value=""  disabled="disabled"></td>
+						<td><input id=count2 type="text" name="count" value=""  disabled="disabled"></td>
+						<td><input id=cname2 type="text" name="cname" readonly></td>
+						<td><input id=caddress2 type="text" name="caddress" value=""  disabled="disabled"></td>
+						<td><input id=sysreq2 type="text" name="sysreq" value=""  disabled="disabled"></td>
+						<td><input id=cost2 type="text" name="cost" value=""  disabled="disabled"></td>
+						<td><input id=version2 type="text" name="version" value=""  disabled="disabled"></td>
+						<td><img id="image2" alt="logo2" width="42" height="42"></td>
+						<td><input id=pos2 type="hidden" readonly></td>
+					</tr>
+					<tr>
+						<td><input id=radio3 type="radio" name="del" onChange="return handleChange()"></td>
+						<td><input id=radioup3 type="radio" name="update" onChange="return handleChangeUpdate()"></td>
+						<td><input id=type3 type="text" name="type" readonly></td>
+						<td><input id=name3 type="text" name="name" readonly></td>
+						<td><input id=details3 type="text" name="details" value=""  disabled="disabled"></td>
+						<td><input id=count3 type="text" name="count" value=""  disabled="disabled"></td>
+						<td><input id=cname3 type="text" name="cname" readonly></td>
+						<td><input id=caddress3 type="text" name="caddress" value=""  disabled="disabled"></td>
+						<td><input id=sysreq3 type="text" name="sysreq" readonly></td>
+						<td><input id=cost3 type="text" name="cost" value=""  disabled="disabled"></td>
+						<td><input id=version3 type="text" name="version" value=""  disabled="disabled"></td>
+						<td><img id="image3" alt="logo3" width="42" height="42"></td>
+						<td><input id=pos3 type="hidden" readonly></td>
+					</tr>
+					<tr>
+						<td><input id=radio4 type="radio" name="del" onChange="return handleChange()"></td>
+						<td><input id=radioup4 type="radio" name="update" onChange="return handleChangeUpdate()"></td>
+						<td><input id=type4 type="text" name="type" readonly></td>
+						<td><input id=name4 type="text" name="name" readonly></td>
+						<td><input id=details4 type="text" name="details" value=""  disabled="disabled"></td>
+						<td><input id=count4 type="text" name="count" value=""  disabled="disabled"></td>
+						<td><input id=cname4 type="text" name="cname" readonly></td>
+						<td><input id=caddress4 type="text" name="caddress" value=""  disabled="disabled"></td>
+						<td><input id=sysreq4 type="text" name="sysreq" value=""  disabled="disabled"></td>
+						<td><input id=cost4 type="text" name="cost" value=""  disabled="disabled"></td>
+						<td><input id=version4 type="text" name="version" value=""  disabled="disabled"></td>
+						<td><img id="image4" alt="logo4" width="42" height="42"></td>
+						<td><input id=pos4 type="hidden" readonly></td>
+					</tr>
+					<tr>
+						<td><input id=radio5 type="radio" name="del" onChange="return handleChange()"></td>
+						<td><input id=radioup5 type="radio" name="update" onChange="return handleChangeUpdate()"></td>
+						<td><input id=type5 type="text" name="type" readonly></td>
+						<td><input id=name5 type="text" name="name" readonly></td>
+						<td><input id=details5 type="text" name="details" value=""  disabled="disabled"></td>
+						<td><input id=count5 type="text" name="count" value=""  disabled="disabled"></td>
+						<td><input id=cname5 type="text" name="cname" readonly></td>
+						<td><input id=caddress5 type="text" name="caddress" value=""  disabled="disabled"></td>
+						<td><input id=sysreq5 type="text" name="sysreq" value=""  disabled="disabled"></td>
+						<td><input id=cost5 type="text" name="cost" value=""  disabled="disabled"></td>
+						<td><input id=version5 type="text" name="version" value=""  disabled="disabled"></td>
+						<td><img id="image5" alt="logo5" width="42" height="42"></td>
+						<td><input id=pos5 type="hidden" readonly>
+						<input type="button" name="up" value="Scroll Down" onClick="return scrollDown()"></td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+			
+			<input type="button" name="updatedata" value="Update" onClick="return updatetool()">
+			
+			<hr>
+			<form name="addForm">
+				To add data to the list, fill in the form below and click on "Add"
+				<br>
+				<td><input id="design" type="radio" name="tooltype" value="design" checked="checked">Design Tool<br>
+					<td><input id="database" type="radio" name="tooltype" value="Databses">Database<br>
+						<td><input id="databasetool" type="radio" name="tooltype" value="Database Tool">Database GUI Tool<br>
+							<td><input id="codecoverage" type="radio" name="tooltype" value="CodeCoverage">Code Coverage Tool<br>
+								<td><input id="testingtool" type="radio" name="tooltype" value="Testing">Testing Tool<br>
+									<td><input id="development" type="radio" name="tooltype" value="Development">Development Tool<br>
+									<td><input id="profiling" type="radio" name="tooltype" value="Profiling">Profiling Tool<br>
+									<td><input id="requirement" type="radio" name="tooltype" value="Requirement">Requirement Gathering Tool<br>
+									<td><input id="versioning" type="radio" name="tooltype" value="Versioning">Versioning Software<br>
+									<td><input id="webdesign" type="radio" name="tooltype" value="webDesign">Web Designing Tool<br>
+									<td><input id="appserver" type="radio" name="tooltype" value="AppServers">Application Servers<br>
+				<td><input id=namei type=text name=namei placeholder="Tool Name" required autofocus></td>
+				<td><input id=counti type=text name=counti placeholder="No of Available Copies" required autofocus></td>
+				<td><input id=xxxxi type=xxxxi name=xxxxi placeholder="Tool price" required autofocus></td>
+				<td><input id=cnamei type=text name=cnamei placeholder="Company Name" required autofocus></td>
+				<td><input id=versioni type=text name=versioni placeholder="version of tool" required autofocus></td>
+				<td><input id=imagei type=text name=imagei placeholder="Name of Logo with jpg type image.jpg" required autofocus></td>
+		<td><textarea id=caddressi type=text name=caddressi cols="40" rows="6" placeholder="Company Address" required autofocus></textarea></td>
+		<td><textarea id=sysreqi type=text name=sysreqi placeholder="Tool System Requirement" cols="40" rows="6" required autofocus></textarea></td>
+		<td><textarea id=detailsi type=text name=detailsi cols="40" rows="6" placeholder="Tool Details" required autofocus></textarea></td>
+				<input type="button" name="add" value="Add" onClick="return validateForm()">
+			</form>		
+</body>
+</html>
+<div id="path">
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+
+<script src="http://harvey2.cc.binghamton.edu/~pmore2/Project3/inserttool.js" type="text/javascript" language="javascript"></script>
+
+<!--
+<script src="file:///D:/WEB%20BASED%20PROGRAMMING/Project3/inserttool.js" type="text/javascript" language="javascript"></script> -->
